@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+}
+.menu{
+    background: pink;    
+    box-shadow: 5px 5px 5px palevioletred;
+    position: absolute;
+    width: 100%;
+}
+
+a img{
+    
+    justify-content: center;
+    align-self: center;
+    margin-left: 640px;
+    
+}
+
+.slider-wrap{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    top: 50px;
+    height: 100px;
+    
+
+}
+.container{
+    position: absolute;
+    top: 15%;
+    z-index: 999;
+}
+
+.form-content{
+    margin-top: 5px;
+    justify-content: center;
+    opacity: 85%;
+    width: 100%;
+    max-width: 350px;
+    height: 630px;
+    background-color:  #0c0c0cfb;
+    padding: 10px 650px 600px 600px;
+    text-align: center;
+    
+    
+    
+
+}
+.form-content h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+    color:  rgb(255, 0, 149);
+    position: relative;
+    font-family: fantasy;
+
+}
+.form-content h1::after{
+    content: '';
+    width: 10px;
+    height: 4px;
+    border-radius: 6px;
+    background:    rgb(255, 0, 149);
+    position: absolute;
+    bottom: -12px;
+    left: 0%;
+    transform: translateX(-50%);
+    
+}
+
+.input-field{
+    background-color: #ffffff;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transition: max-height 05s;
+    overflow: hidden;
+
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 10%;
+    padding: 10px 1px;
+    outline: none;
+    color: #110000;
+
+}
+
+input::placeholder{
+    color:   rgb(255, 0, 149);
+}
+
+.input-field i{
+    margin-left: 15px;
+    color:   rgb(255, 0, 149);
+}
+
+button{
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    background:  rgb(255, 0, 149); 
+    box-shadow: 5px 5px black;
+    margin-left: 15px;
+    border-color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button2{
+    background:   rgb(207, 54, 54);
+    box-shadow: 5px 5px black;
+}
+
+
+.slider-box ul{
+    display: flex;
+    padding: 0%;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider-box img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0%{ margin-left: 0%;}
+    20%{ margin-left: 0%;}
+
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%;}
+    75%{ margin-left: -200%;}
+
+    75%{ margin-left: -300%;}
+    100%{ margin-left: -300%;}
+}
+
